@@ -11,7 +11,7 @@ INICIO DE SESIÓN
 <input type="text"  name="usuario"  class="form-control" placeholder="Ingrese su Usuario" required autofocus>
 </div>
 <div class="form-group">
-<input type="text"  name="contrasena"class="form-control" placeholder="Ingrese su Contraseña" required>
+<input type="password"  name="contrasena"class="form-control" placeholder="Ingrese su Contraseña" required>
 </div>
 </div>
 <div class="modal-footer">
