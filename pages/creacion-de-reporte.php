@@ -75,7 +75,7 @@ readonly>
 <select name="horainicio" id="horainicio" class="form-control" required="">
 <option value="">[SELECCIONAR]</option>
 <?php
-$sql    = "SELECT  * FROM fechainicio";
+$sql    = "SELECT  * FROM fechainicio order by valor";
 $result = $db->query($sql);
 while ($row = $result->fetch_assoc()) {
 echo "<option value=\"{$row['valor']}\">";

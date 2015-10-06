@@ -4,7 +4,7 @@ include('../includes/bd/conexion.php');
 $db = new Conexion();
 $horafin=$_POST["elegido"];
 
-$sql        =  "SELECT * FROM fechafin WHERE valor>$horafin";
+$sql        =  "SELECT * FROM fechafin WHERE valor>$horafin ORDER BY valor";
 $result     = $db->query($sql);
 while ($row = $result->fetch_assoc()) {
 echo "<option value=\"{$row['valor']}\">";
