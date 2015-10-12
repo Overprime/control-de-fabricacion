@@ -18,7 +18,7 @@ u.area_idarea=a.idarea INNER JOIN procesos AS p ON
 r.procesos_idprocesos=p.idprocesos INNER JOIN clasificacion AS c ON 
 r.clasificacion_idclasificacion=c.idclasificacion 
 WHERE  usuario_idusuario=$_SESSION[id] AND r.fechainicio='$Fecha'
-ORDER BY r.horastrabajo
+ORDER BY CAST(r.horastrabajo AS DECIMAL)
 ";
 $result = $db->query($query);
 $numfilas = $result->num_rows;
